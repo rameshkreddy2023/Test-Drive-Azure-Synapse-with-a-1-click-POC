@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sql--msftl5i7zstjh65eipocws1",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/665372a9-6f56-4077-b956-034bf10ef3a7/resourceGroups/synapselab/providers/Microsoft.Synapse/workspaces/msftl5i7zstjh65eipocws1",
+		"groupId": "sql",
+		"fqdns": [
+			"msftl5i7zstjh65eipocws1.7987993a-4172-4e61-9351-a15e7b49bfa7.sql.azuresynapse.net"
+		]
+	}
+}
