@@ -1,0 +1,17 @@
+{
+	"name": "Count Products by Category",
+	"properties": {
+		"content": {
+			"query": "-- This is auto-generated code\nSELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n        BULK 'https://msftsca5jre4cxbropoc.dfs.core.windows.net/files/product_data/ products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0'\n    ) AS [result]\n\n\n SELECT\n     Category, COUNT(*) AS ProductCount\n FROM\n     OPENROWSET(\n        BULK 'https://msftsca5jre4cxbropoc.dfs.core.windows.net/files/product_data/ products.csv',\n         FORMAT = 'CSV',\n         PARSER_VERSION='2.0',\n         HEADER_ROW = TRUE\n     ) AS [result]\n GROUP BY Category",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": -1
+		},
+		"type": "SqlQuery"
+	}
+}
